@@ -13,30 +13,27 @@ A fast, multi-threaded crawler to discover JavaScript/JSON files and detect expo
 ⚡ Multi-threading, Custom Headers, Proxy Support
 
 **📄 JSON/YAML/TXT Reporting**
+
 **📦 Install**
-bash
-Copy
-Edit
+   ```bash
 git clone https://github.com/raj80rk/JS-secretfinder-h8.git
 cd js-secret-crawler
 pip install -r requirements.txt
-🚀 Usage
-🌐 Discover JS/JSON Files
-bash
-Copy
-Edit
+```
+**🚀 Usage**
+
+**🌐 Discover JS/JSON Files**
+
 python crawler.py -l https://example.com -o urls.txt
-🔐 Scan for Secrets
-bash
-Copy
-Edit
+
+**🔐 Scan for Secrets**
+
+
 python crawler.py -il urls.txt --scan-secrets -o results.json
-🧠 All-in-One Scan
-bash
-Copy
-Edit
+**🧠 All-in-One Scan**
+
 python crawler.py -l https://example.com --scan-secrets --threads 10 -o report.yaml
-🛠️ Options
+**🛠️ Options**
 -l / --list: URLs to scan
 
 -il / --input: Input file
@@ -51,7 +48,8 @@ python crawler.py -l https://example.com --scan-secrets --threads 10 -o report.y
 
 --proxy, --headers, --user-agent: Advanced configs
 
-🧬 Detected Secrets
+**🧬 Detected Secrets**
+
 Supports 15+ secret types:
 
 AWS/GitHub/Stripe/Google API Keys
@@ -60,14 +58,14 @@ JWTs, Private Keys, DB URLs
 
 Generic API Keys, Passwords, High-Entropy Strings
 
-🧑‍💻 Contributing
+**🧑‍💻 Contributing**
 Fork → Create Branch → Commit → PR
 
 Add new regex patterns under AdvancedSecretScanner in crawler.py
 
 Test & document your changes
 
-⚠️ Legal & Ethics
+**⚠️ Legal & Ethics**
 Scan only with permission
 
 Respect rate limits & robots.txt
