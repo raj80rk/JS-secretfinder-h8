@@ -12,9 +12,8 @@ A fast, multi-threaded crawler to discover JavaScript/JSON files and detect expo
 
 ⚡ Multi-threading, Custom Headers, Proxy Support
 
-📄 JSON/YAML/TXT Reporting
-
-📦 Install
+**📄 JSON/YAML/TXT Reporting**
+**📦 Install**
 bash
 Copy
 Edit
