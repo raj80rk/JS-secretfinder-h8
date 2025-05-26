@@ -23,30 +23,34 @@ pip install -r requirements.txt
 **🚀 Usage**
 
 **🌐 Discover JS/JSON Files**
-
+   ```bash
 python crawler.py -l https://example.com -o urls.txt
-
+```
 **🔐 Scan for Secrets**
 
-
+   ```bash
 python crawler.py -il urls.txt --scan-secrets -o results.json
+
+```
 **🧠 All-in-One Scan**
-
+   ```bash
 python crawler.py -l https://example.com --scan-secrets --threads 10 -o report.yaml
+```
 **🛠️ Options**
--l / --list: URLs to scan
 
--il / --input: Input file
+- `-l `, `--list:` : URLs to scan
 
---scan-secrets: Enable secret scanning
+- `-il`, `--input`: Input file
 
---format: Output format (json/yaml/txt)
+- `--scan-secrets`: Enable secret scanning
 
---threads: Number of threads (default: 5)
+-`--format`: Output format (json/yaml/txt)
 
---timeout: Request timeout
+-`--threads`: Number of threads (default: 5)
 
---proxy, --headers, --user-agent: Advanced configs
+-`--timeout`: Request timeout
+
+-`--proxy`, `--headers`, `--user-agent`: Advanced configs
 
 **🧬 Detected Secrets**
 
@@ -59,6 +63,7 @@ JWTs, Private Keys, DB URLs
 Generic API Keys, Passwords, High-Entropy Strings
 
 **🧑‍💻 Contributing**
+
 Fork → Create Branch → Commit → PR
 
 Add new regex patterns under AdvancedSecretScanner in crawler.py
@@ -66,6 +71,7 @@ Add new regex patterns under AdvancedSecretScanner in crawler.py
 Test & document your changes
 
 **⚠️ Legal & Ethics**
+
 Scan only with permission
 
 Respect rate limits & robots.txt
